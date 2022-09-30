@@ -1,0 +1,53 @@
+----------- // Game Name // ----------- 
+---------------------------------------
+
+----- // Function 1 // -----
+
+----- // Function 2 // -----
+
+----- // Function 3 // -----
+
+----- // Function 4 // -----
+
+----------------------------------------------------------------------------------------------------------------------------------------
+----- // UI Stuff // -----
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/luasight/boware.cc-UI/main/Libary"))()
+----------------------------------------------------------------------------------------------------------------------------------------
+local Window = Library:New({Name = "boware.cc | 0.0.0 | Game Name", Size = Vector2.new(497, 605), Accent = Color3.fromRGB(73, 82, 82)})
+----------------------------------------------------------------------------------------------------------------------------------------
+----- // Tabs // -----
+----------------------------------------------------------------------------------------------------------------------------------------
+local Tab One = Window:Page({Name = " Tab 1 "})
+local Tab Two = Window:Page({Name = "  Tab 2  "})
+local Tab Three = Window:Page({Name = "  Tab 3  "})
+local Tab Four = Window:Page({Name = "  Tab 4  "})
+local Tab Five = Window:Page({Name = " Tab 5 "})
+local Settings = Window:Page({Name = "Settings"})
+-------------------------------------------------------------------------
+----- // Windows // -----
+-------------------------------------------------------------------------
+local A = Tab One:Section({Name = "Window 1", Side = "Left"})
+local B = Tab Two:Section({Name = "Window 1", Side = "Left"})
+local C = Tab Three:Section({Name = "Window 1", Side = "Left"})
+local D = Tab Four:Section({Name = "Window 1", Side = "Left"})
+local E = Tab Five:Section({Name = "Window 1", Side = "Left"})
+local Settings_Main = Settings:Section({Name = "Main", Side = "Left"})
+-------------------------------------------------------------------------
+
+--- // Tab A Window 1 // ---
+
+--- // Tab B Window 1 // ---
+
+--- // Tab C Window 1 // ---
+
+--- // Tab D Window 1 // ---
+
+--- // Tab E Window 1 // ---
+
+--- // Settings // ---
+
+Settings_Main:ConfigBox({})
+Settings_Main:ButtonHolder({Buttons = {{"Load", function() end}, {"Save", function() end}}})
+Settings_Main:Label({Name = "Unloading will fully unload\neverything, so save your\nconfig before unloading.", Middle = true})
+Settings_Main:Button({Name = "Unload", Callback = function() Window:Unload() end})
+Window:Initialize()
