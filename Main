@@ -26,23 +26,28 @@ local Settings = Window:Page({Name = "Settings"})
 -------------------------------------------------------------------------
 ----- // Windows // -----
 -------------------------------------------------------------------------
-local A = Tab One:Section({Name = "Window 1", Side = "Left"})
-local B = Tab Two:Section({Name = "Window 1", Side = "Left"})
-local C = Tab Three:Section({Name = "Window 1", Side = "Left"})
-local D = Tab Four:Section({Name = "Window 1", Side = "Left"})
-local E = Tab Five:Section({Name = "Window 1", Side = "Left"})
+local A1 = Tab One:Section({Name = "Window 1", Side = "Left"})
+-------------------------------------------------------------------------
+local B1 = Tab Two:Section({Name = "Window 1", Side = "Left"})
+-------------------------------------------------------------------------
+local C1 = Tab Three:Section({Name = "Window 1", Side = "Left"})
+-------------------------------------------------------------------------
+local D1 = Tab Four:Section({Name = "Window 1", Side = "Left"})
+-------------------------------------------------------------------------
+local E1 = Tab Five:Section({Name = "Window 1", Side = "Left"})
+-------------------------------------------------------------------------
 local Settings_Main = Settings:Section({Name = "Main", Side = "Left"})
 -------------------------------------------------------------------------
 
---- // Tab A Window 1 // ---
+--- // Tab A1 Window 1 // ---
 
---- // Tab B Window 1 // ---
+--- // Tab B1 Window 1 // ---
 
---- // Tab C Window 1 // ---
+--- // Tab C1 Window 1 // ---
 
---- // Tab D Window 1 // ---
+--- // Tab D1 Window 1 // ---
 
---- // Tab E Window 1 // ---
+--- // Tab E1 Window 1 // ---
 
 --- // Settings // ---
 
